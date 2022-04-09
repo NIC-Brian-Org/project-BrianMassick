@@ -41,14 +41,14 @@
              <option value="com">Commercial</option>
              <option value="str">Strata</option>
            </select><br>
-          <label for="wantService">Select the Services for Estimation</label><br>
+          <label>Select the Services for Estimation</label><br>
            <input type="checkbox" name="siding" id="siding" value="siding" onchange="toggleSidingField()">Siding<br>
            <input type="checkbox" name="window" id="window" value="window" onchange="toggleWindowsField()">Windows<br>
            <input type="checkbox" name="concrete" id="concrete" value="concrete" onchange="toggleConcreteField()">Concrete<br>
            <input type="checkbox" name="demossing" id="demossing" value="demossing" onchange="toggleDemossField()">De-Mossing<br>
            <input type="checkbox" name="deck" id="deck" value="deck" onchange="toggleDeckField()">Deck Cleaning<br>
            <input type="checkbox" name="gutter" id="gutter" value="gutter" onchange="toggleGutterField()">Gutters<br>
-           <label for="serviceSize">Enter the estimated square footage of the selected services</label><br>
+           <label>Enter the estimated square footage of the selected services</label><br>
           </form>
           <button id="calculate" type="button" onclick="calculateEstimate()">Calculate Estimate</button>
           <h3 id="calculatedamount">Calculated Amount</h3>
@@ -60,7 +60,7 @@
                 <label for="fname">First name</label>
                   <input type="text" id="fname" name="firstname" placeholder="Ex: John" required><br>
                 <label for="lname">Last name</label>
-                  <input for="lname" id="lname" name="lastname" placeholder="Ex: Doe" required><br>
+                  <input type="text" id="lname" name="lastname" placeholder="Ex: Doe" required><br>
                 <label for="email">Email</label>
                   <input type="email" id="email" name="email" placeholder="Ex: JohnDoe@WindowMastersNanaimo.com" required><br>
                 <label for="phone">Phone number</label>
@@ -73,7 +73,7 @@
                       <option value="strata">Strata</option>
                       <option value="other">Other</option>
                   </select>
-                <label for="service">Services</label><br>
+                <label>Services</label><br>
                   <input type="radio" name="siding" id="sidings" value="siding">Siding
                   <input type="radio" name="windows" id="windows" value="windows">Windows<br>
                   <input type="radio" name="concrete" id="concretes" value="concrete">Concrete
