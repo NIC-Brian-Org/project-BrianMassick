@@ -1,0 +1,562 @@
+/* This is the universal css for the entire website */
+/*
+Author: Brian Massick
+Date last edited: April, 8. 2022
+*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto+Condensed:wght@700&display=swap');
+/* Roboto Condensed BOLD 700 (for headings) */
+/* Poppins light 300, regular 400, semi-bold 600 */
+body {
+    font-size:62.5%;
+    font-size:1.6rem;
+    background-color:#ffffff;
+}
+p {
+    color:rgb(236, 252, 242);
+    font-size:1.2rem;
+    font-weight:600;
+    font-family: 'Poppins', sans-serif;
+}
+h2 {
+    color:#3DB54A;
+    text-align:center;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+}
+h3 {
+    font-size:1.4em;
+    color:#3DB54A;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight:700;
+}
+li {
+    color:antiquewhite;
+    font-size:1.0rem;
+}
+.titles {
+    color:#3DB54A;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    align-items:stretch;
+}
+nav {
+    margin:10px;
+    background-color:#8DC641;
+}
+nav .wrap{   /* for the navigation links bar */
+    width:800px;
+    margin:auto;
+}
+nav ul {
+  list-style-type: none;
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+nav li {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+nav li a {
+  padding: 15px;
+  display: inline-block;
+  text-decoration: none;
+  color:rgb(36, 14, 14);
+}
+nav li a:hover {
+    background-color:white;
+    color:rgb(39, 145, 62);
+}
+.inquiry { /* inquiry form is the same across all pages */
+    background-color:beige;
+    border:5px solid black;
+    margin:10px;
+    padding:5px;
+    font-size:1.2rem;
+    position:sticky;
+    width:30%;
+    float:right;
+    text-align:center;
+}
+.wrap { /* basic wrap functions */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:99%;
+    max-width:99%;
+}
+/* This is the css for the HOME page 
+   Will be updated when more info is provided
+*/
+.aboutus { /* needs proper team photo */
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/teamphoto.jpg");
+    background-size:cover;
+    background-position:center;
+    width:60%;
+    margin:10px;
+    padding:1%;
+    border:5px solid black;
+}
+.services { /* the flex box for the services sections */
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    max-width:100%;
+    white-space:normal;
+}
+.sectionleft {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Residential.jpg"); /* https://www.pexels.com/photo/house-lights-turned-on-106399/ */
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+    /* add shadow to make it look like leaning inwards */
+}
+.sectionmid {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Commercial.jpg"); /* https://www.pexels.com/photo/7-eleven-store-photo-during-sunset-3116970/ */
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.sectionright {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Strata.jpg"); /* https://unsplash.com/photos/awL_YCtPGv4 */
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+.whychooseus { /* flex box for why choose us section */
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    max-width:100%;
+    white-space:normal;
+}
+.knowhow {
+    background-color:#8C240F;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.harm {
+    background-color:#d86732;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.friendly {
+    background-color:#8C240F;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.localbusiness {
+    background-color:#d86732;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+@media only screen and (max-width:768px) {
+    /* for mobile phones (ONLY HOME PAGE SO FAR) */
+    .inquiry {
+        background-color:beige;
+        border:5px solid black;
+        margin:10px;
+        padding:5px;
+        font-size:1.2rem;
+        position:sticky;
+        width:93%;
+        text-align:center;
+    }
+    .wrap {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        width:99%;
+        max-width:99%;
+    }
+    .aboutus {
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/teamphoto.jpg");
+        background-size:cover;
+        background-position:center;
+        width:93%;
+        margin:10px;
+        padding:1%;
+        border:5px solid black;
+    }
+    .services {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        width:100%;
+        max-width:100%;
+        white-space:normal;
+    }
+    .sectionleft {
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Residential.jpg"); /* https://www.pexels.com/photo/house-lights-turned-on-106399/ */
+        background-size:cover;
+        background-position:center;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+    .sectionmid {
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Commercial.jpg"); /* https://www.pexels.com/photo/7-eleven-store-photo-during-sunset-3116970/ */
+        background-size:cover;
+        background-position:center;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+    .sectionright {
+        background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Strata.jpg"); /* https://unsplash.com/photos/awL_YCtPGv4 */
+        background-size:cover;
+        background-position:center;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+    .whychooseus {
+        display:flex;
+        flex-direction:column;
+        justify-content:space-between;
+        width:100%;
+        max-width:100%;
+        white-space:normal;
+    }
+    .knowhow {
+        background-color:#8C240F;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+    .harm {
+        background-color:#d86732;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+    .friendly {
+        background-color:#8C240F;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+    .localbusiness {
+        background-color:#d86732;
+        border:5px solid black;
+        padding:5px;
+        margin:5px;
+        text-align:center;
+    }
+}
+/* This is the extra CSS for ESTIMATE CALCULATOR
+*/
+#calculatedamount {
+    text-align: center;
+}
+/* This is the css for the RESIDENTIAL page 
+   Will be updated when more info is provided
+*/
+.beforeafter {  /* flex box for brefore/after photos when they are received */
+    /*display:flex;
+    flex-direction:row;*/
+    background-color:#7e6161;
+    background-size:auto;
+    width:60%;
+    border:5px solid black;
+    text-align:center;
+    /* justify-content:center;
+    align-items:center;
+    white-space:normal; */
+}
+.resservices { /* flexbox for residential services sections */
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    width:100%;
+    max-width:100%;
+    font-size:1.0rem;
+}
+.ressectionlefttop {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/WMafter.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.ressectionmidtop { /* Photo by Dids from Pexels */
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Windows.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.ressectionrighttop {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Deck.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+.ressectionleftbottom { /* Photo by Gilmer Diaz Estela from Pexels */
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/demoss.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.ressectionmidbottom {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Gutters.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.ressectionrightbottom {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/concrete.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+/* This is the css for the STRATA page 
+   Will be updated when more info is provided
+*/
+#stratadiscounts {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Windowmastersfull.png");
+    background-size:cover;
+    background-position:center;
+    width:95%;
+    margin:10px;
+    padding:1%;
+    border:5px solid black;
+}
+.strataservices { /* flexbox for strata services sections */
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    width:100%;
+    max-width:100%;
+    font-size:1.0rem;
+}
+.strataservicetopleft {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/WMafter.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.strataservicetopmid {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/windows.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.strataservicetopright {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Deck.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+.strataservicebottomleft {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/demoss.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.strataservicebottommid {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Gutters.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.strataservicebottomright {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/concrete.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+/* This is the css for the COMMERCIAL page
+   Will be updated when more info is provided
+*/
+.commercialproposal {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Windowmastersfull.png");
+    background-size:cover;
+    background-position:center;
+    width:95%;
+    margin:10px;
+    padding:1%;
+    border:5px solid black;
+}
+.commercialservices { /* flexbox for commercial services sections */
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:space-around;
+    width:100%;
+    max-width:100%;
+    font-size:1.0rem;
+}
+.comservicetopleft {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/WMafter.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.comservicetopmid {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/windows.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.comservicetopright {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Deck.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+.comservicebottomleft {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/demoss.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) -5px 5px, rgba(55, 78, 25, 0.3) -10px 10px, rgba(55, 78, 25, 0.2) -15px 15px, rgba(55, 78, 25, 0.1) -20px 20px, rgba(55, 78, 25, 0.05) -25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #48 by Alligator */
+}
+.comservicebottommid {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/Gutters.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 0px 5px, rgba(55, 78, 25, 0.3) 0px 10px, rgba(55, 78, 25, 0.2) 0px 15px, rgba(55, 78, 25, 0.1) 0px 20px, rgba(55, 78, 25, 0.05) 0px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #49 by Alligator */
+}
+.comservicebottomright {
+    background-image:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("images/concrete.jpg");
+    background-size:cover;
+    background-position:center;
+    border:5px solid black;
+    padding:5px;
+    margin:5px;
+    text-align:center;
+    box-shadow: rgba(55, 78, 25, 0.4) 5px 5px, rgba(55, 78, 25, 0.3) 10px 10px, rgba(55, 78, 25, 0.2) 15px 15px, rgba(55, 78, 25, 0.1) 20px 20px, rgba(55, 78, 25, 0.05) 25px 25px;
+    /* https://getcssscan.com/css-box-shadow-examples Box shadow #50 by Alligator */
+}
+/* This is the css for the GALLERY page 
+   Will be updated when more info is provided
+   Sadly I was not able to get any photo's so I had nothing to provide
+*/

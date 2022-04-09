@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Author: Brian Massick
+       Purpose: Business website
+       Date Last Modified: April, 8th, 2022
+  -->
+
+<head>
+    <title>Window Masters Nanaimo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="WMstyle.css" type="text/css">
+    <link rel="icon" href="images/faviconWM.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="titles">
+        <a href="WMhome.html"><img src="images/Windowmasterslogo.png" alt="Window Masters Nanaimo" width="100"></a>
+        <h1>Commercial Business</h1>
+        <div>Contact info</div>
+    </header>
+    <nav class="wrap">
+        <div><!--add class for css styling-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="WMresidential.html">Residential</a></li>
+                <li><a href="WMstrata.html">Strata</a></li>
+                <li><a href="WMcomm-business.html">Commercial Business</a></li>
+                <li><a href="WMgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+      <div class="wrap">
+        <div class="beforeafter">
+          <h2>Estimate Calculator</h2><br>
+          <form method="get" id="estimateCalculator">
+          <label for="typeBusiness">Type of Business</label><br>
+           <select size="1" name="typeBusiness" id="typeBusiness">
+             <option>Select Business Type</option>
+             <option value="res">Residential</option>
+             <option value="com">Commercial</option>
+             <option value="str">Strata</option>
+           </select><br>
+          <label for="wantService">Select the Services for Estimation</label><br>
+           <input type="checkbox" name="siding" id="siding" value="siding" onchange="toggleSidingField()">Siding<br>
+           <input type="checkbox" name="window" id="window" value="window" onchange="toggleWindowsField()">Windows<br>
+           <input type="checkbox" name="concrete" id="concrete" value="concrete" onchange="toggleConcreteField()">Concrete<br>
+           <input type="checkbox" name="demossing" id="demossing" value="demossing" onchange="toggleDemossField()">De-Mossing<br>
+           <input type="checkbox" name="deck" id="deck" value="deck" onchange="toggleDeckField()">Deck Cleaning<br>
+           <input type="checkbox" name="gutter" id="gutter" value="gutter" onchange="toggleGutterField()">Gutters<br>
+           <label for="serviceSize">Enter the estimated square footage of the selected services</label><br>
+          </form>
+          <button id="calculate" type="button" onclick="calculateEstimate()">Calculate Estimate</button>
+          <h3 id="calculatedamount">Calculated Amount</h3>
+          <button id="clear" type="button" onclick="clearEstimate()">Clear Estimate</button>
+          </div>
+        <aside class="inquiry">
+            <h2>Inquiries</h2>
+            <form method="post"><!--Add an action for this form, aka a place for it to send and confirmation-->
+                <label for="fname">First name</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Ex: John" required><br>
+                <label for="lname">Last name</label>
+                  <input for="lname" id="lname" name="lastname" placeholder="Ex: Doe" required><br>
+                <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Ex: JohnDoe@WindowMastersNanaimo.com" required><br>
+                <label for="phone">Phone number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Ex: 250-xxx-xxxx">
+                <label for="typeinquiry">Type of inquiry</label>
+                  <select size="1" name="typeinquiry" id="typeinquiry">
+                      <option>Select type of inquiry</option>
+                      <option value="residential">Residential</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="strata">Strata</option>
+                      <option value="other">Other</option>
+                  </select>
+                <label for="service">Services</label><br>
+                  <input type="radio" name="siding" id="sidings" value="siding">Siding
+                  <input type="radio" name="windows" id="windows" value="windows">Windows<br>
+                  <input type="radio" name="concrete" id="concretes" value="concrete">Concrete
+                  <input type="radio" name="demoss" id="demoss" value="demoss">De-Mossing<br>
+                  <input type="radio" name="deck" id="decks" value="deck">Deck cleaning
+                  <input type="radio" name="gutters" id="gutters" value="gutters">Gutters<br>
+                  <input type="radio" name="other" id="other" value="other">Other<br>
+                  Comments:<br>
+                  <textarea name="comments" id="comments"></textarea><br><br>
+                  <input type="submit" name="submit">
+            </form>
+        </aside>
+        </div>
+        <div class="commercialproposal">
+          <h2>Our Proposal to You</h2>
+          <p>Here at Window Masters Nanaimo we offer contracts for commercial jobs. 
+            We are dedicated and committed to any short or long term contracts and 
+            would like to prove why you should choose Window Masters Nanaimo for 
+            your business's aesthetic and exterior health needs.
+          </p>
+        </div>
+        <div class="commercialservices">
+        <article class="comservicetopleft">
+          <h3>Exterior Cleaning</h3>
+          <p>Exterior cleaning is important for the longevity of your property. 
+            As such your property deserves the best cleaning process available. 
+            Window Masters Nanaimo offers an amazing process, this process is:
+          </p><br>
+          <ol type="1">
+            <li>Green biodegradable non-harmful pre-wash sprayed on with powerwasher</li>
+            <li>Using extention poles with a micro-fiber brush head we will scrub the:
+               siding, outside gutters, and soffits on your home.
+            </li>
+            <li>Then to finish it all off we will rinse the walls to get any loose algae off.</li>
+          </ol><br>
+          <p>We pride ourselves in how well we will clean your home and by using our 
+            process you shouldn't need your house cleaned for atleast x years!
+          </p>
+        </article>
+        <article class="comservicetopmid">
+          <h3>Interior/Exterior Windows</h3>
+          <p>We started our business on windows. This is something we do better then 
+            anyone else. The process we use for your windows is:
+          </p><br>
+          <ol type="1">
+            <li>We use our microfiber brushes to lightly brush the outside windows</li>
+            <li>Then we blow out any tracks in the outside windows with our nosel</li>
+            <li>After the track is blown out we wipe it sparkling clean with a cloth</li>
+            <li>We then use our solution and a window microfiber scrub pad and squeegee 
+              to make sure the window is completely cleaned
+            </li>
+            <li>Afterwards we will take any of the screens from your windows and 
+              use the microfiber scrub pad and our nosel to clean those as well.
+            </li>
+          </ol><br>
+          <p>Our window process is tried and true, we have been using it for X amount of 
+            years and constantly here from our customers that it leaves their windows 
+            cleaner then they have ever seen.
+          </p>
+        </article>
+        <article class="comservicetopright">
+          <h3>Deck Cleaning</h3>
+          <p>When it comes to cleaning your deck we will make sure it shines. 
+            We will clean every part of your deck such as:
+          </p><br>
+          <ul>
+            <li>Stairs</li>
+            <li>Railing</li>
+            <li>Glass panels</li>
+            <li>Stilts</li>
+            <li>Any other component that your deck has</li>
+          </ul><br>
+          <p>Our process to cleaning your deck is any combination of the processes 
+            we have for our other services. We will always make sure everything we 
+            do is pristine and as clean as it can get.
+          </p>
+        </article>
+        </div>
+        <div class="commercialservices">
+        <article class="comservicebottomleft">
+          <h3>De-mossing</h3>
+          <p>We starting de-mossing X years ago. Since then we have been improving 
+            how we do things and have a fantastic process so we can offer the best 
+            possible service. Our process is:
+          </p><br>
+          <ol type="1">
+            <li></li><!--Try to contact Aaron on what their process for this is-->
+          </ol>
+          <p>When it comes to de-mossing make sure you are hiring someone you can trust. 
+            We have hundreds of customers that would back us up when we say that we are 
+            that trustworthy someone.
+          </p>
+        </article>
+        <article class="comservicebottommid">
+          <h3>Gutters</h3>
+          <p>When it comes to gutters we will make sure that they are pristine. 
+            We have lots of experience with gutters and have a process that 
+            continues to prove that it is efficient and allows us to make sure 
+            your gutters are in tip top shape. Our process is:
+          </p><br>
+          <ol type="1">
+            <li>We take a look at the gutters with our camera</li>
+            <li>Then we suck up as much of the stuff as possible with a shop vaccum 
+              that has a camera so we can see that it is coming clean
+            </li>
+            <li>After using the shop vaccum if there was any debree remaining we will 
+              go up with our ladder to make sure its all cleaned out
+            </li>
+          </ol>
+          <p>We will make sure that your gutters will be unclogged and cleaned. We 
+            also do not dispose of the gutter contents in your lawn. We will have a 
+            place to dispose of it.
+          </p>
+        </article>
+        <article class="comservicebottomright">
+          <h3>Concrete</h3>
+          <p>Concrete is something that if not done properly can cause many 
+            issues down the road. We will make sure it is proffesionally cleaned 
+            and no spots are left dirty. Our process of concrete cleaning is:
+          </p><br>
+          <ol type="1">
+            <li>We will assess the concrete by walking around and finding our 
+              starting point
+            </li>
+            <li>Then we use our heavy duty power washer and choose which of the 
+              nosel's are appropriate for the job
+            </li>
+            <li>We then power wash every inch of concrete perfectly to make sure 
+              there is no spot left unclean
+            </li>
+            <li>We then make sure to rinse it all of so there isnt a bunch of 
+              moss etc. on your freshly cleaned concrete
+            </li>
+          </ol>
+          <p>We will make sure the concrete will not be at risk of erosion and crumbling. 
+            We will also make sure to point out any issues that may arise if the concrete 
+            was not taken care of beforehand.
+          </p>
+        </article>
+        </div>
+    </main>
+    <footer>
+      <nav class="wrap">
+        <a href="WMhome.html"><img src="images/Windowmasterslogo.png" alt="Window Masters Nanaimo" width="100"></a>
+        <div>
+            <ul>
+                <li><a href="WMhome.html">Home</a></li>
+                <li><a href="WMresidential.html">Residential</a></li>
+                <li><a href="WMstrata.html">Strata</a></li>
+                <li><a href="WMcomm-business.html">Commercial Business</a></li>
+                <li><a href="WMgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+        <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+    </nav>
+    </footer>
+    <script src="WMscript.js"></script>
+</body>
+</html>

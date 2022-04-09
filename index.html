@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+      <!-- Author: Brian Massick
+       Purpose: Create an estimate calculator.
+       Date Last Modified: April, 8th, 2022
+  -->
+
+<head>
+    <title>Window Masters Nanaimo</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="WMstyle.css" type="text/css">
+    <link rel="icon" href="images/faviconWM.png" type="image/x-icon">
+
+</head>
+<body>
+    <header class="titles">
+        <a href="WMhome.html"><img src="images/Windowmasterslogo.png" alt="Window Masters Nanaimo" width="100"></a>
+        <h1>Window Masters Nanaimo</h1>
+        <div>Contact info</div>
+    </header>
+    <nav class="wrap">
+        <div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="WMresidential.html">Residential</a></li>
+                <li><a href="WMstrata.html">Strata</a></li>
+                <li><a href="WMcomm-business.html">Commercial Business</a></li>
+                <li><a href="WMgallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="wrap">
+        <div class="aboutus">
+            <h2>About Us</h2> <!--image should be of the window masters team.-->
+            <p>Window Masters Nanaimo is a small local business based out of Nanaimo, BC.
+                Our goal is to provide excellent services and to help you help your property. 
+                We started back in XXXX and have many return customers. We pride ourselves on our diligence, 
+                honesty, attention to detail, and excellent customer service.
+            </p>
+        </div>
+        <aside class="inquiry">
+            <h2>Inquiries</h2>
+            <form method="post"><!--Add an action for this form, aka a place for it to send and confirmation-->
+                <label for="fname">First name</label><!--form for submitting inquiries. Should be hooked up to an email or something-->
+                  <input type="text" id="fname" name="firstname" placeholder="Ex: John" required><br>
+                <label for="lname">Last name</label>
+                  <input for="lname" id="lname" name="lastname" placeholder="Ex: Doe" required><br>
+                <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Ex: JohnDoe@WindowMastersNanaimo.com" required><br>
+                <label for="phone">Phone number</label>
+                  <input type="tel" id="phone" name="phone" placeholder="Ex: 250-xxx-xxxx"><br>
+                <label for="typeinquiry">Type of inquiry</label>
+                  <select size="1" name="typeinquiry" id="typeinquiry">
+                      <option>Select type of inquiry</option>
+                      <option value="residential">Residential</option>
+                      <option value="commercial">Commercial</option>
+                      <option value="strata">Strata</option>
+                      <option value="other">Other</option>
+                  </select><br>
+                <label for="service">Services</label><br>
+                  <input type="radio" name="siding" id="siding" value="siding">Siding<!--Change to exterior cleaning-->
+                  <input type="radio" name="windows" id="windows" value="windows">Windows<br>
+                  <input type="radio" name="concrete" id="concrete" value="concrete">Concrete
+                  <input type="radio" name="demoss" id="demoss" value="demoss">De-Mossing<br>
+                  <input type="radio" name="deck" id="deck" value="deck">Deck cleaning
+                  <input type="radio" name="gutters" id="gutters" value="gutters">Gutters<br>
+                  <input type="radio" name="other" id="other" value="other">Other<br>
+                Comments:<br>
+                  <textarea name="comments" id="comments"></textarea><br><br>
+                  <input type="submit" name="submit">
+            </form>
+        </aside>
+        </div>
+        <div class="services">
+        <div class="sectionleft">
+            <h2>Residential Services</h2><!--Highlights the objective when cleaning residential properties-->
+            <p>We offer services such as:</p><br>
+            <ul>
+                <li>Exterior cleaning</li>
+                <li>Windows</li>
+                <li>Concrete</li>
+                <li>De-mossing</li>
+                <li>Deck cleaning</li>
+                <li>Gutters</li>
+            </ul><br>
+            <p>We will come personally and give you a quote on your home.
+                Our quote will involve us walking around your home with you to give you an idea of what we will do.
+                Also feel free to bring any concernes or questions up with us at any time. You can also ask 
+                ahead of time with our "Inquiry" form.
+            </p>
+            <form action="WMresidential.html">
+                <input type="submit" value="More info">
+            </form>
+        </div>
+        <div class="sectionmid">
+            <h2>Commercial Services</h2><!--Highlights the objective when cleaning commercial property-->
+            <p>We offer services such as:</p><br>
+            <ul>
+                <li>Exterior cleaning</li>
+                <li>Windows</li>
+                <li>Concrete</li>
+                <li>De-mossing</li>
+                <li>Deck cleaning</li>
+                <li>Gutters</li>
+            </ul><br>
+            <p>We offer contracts for our services, we will personally walk around the business to talk about what 
+                we can offer, what our expertise is, and why we are the best for the job. We guarentee that you will 
+                get what you pay for and look forward to proving why we are the best. Please feel free to ask any questions 
+                or get any concernes answered my using the "Inquiry" form.
+            </p>
+            <form action="WMcomm-business.html">
+                <input type="submit" value="More info">
+            </form>
+        </div>
+        <div class="sectionright">
+            <h2>Strata Services</h2> <!--Hightlights objectives when cleaning strata's-->
+            <p>We offer services such as:</p><br>
+            <ul>
+                <li>Exterior cleaning</li>
+                <li>Windows</li>
+                <li>Concrete</li>
+                <li>De-mossing</li>
+                <li>Deck cleaning</li>
+                <li>Gutters</li>
+            </ul><br>
+            <p>We offer discounts for our services when you group multiple units of your strata into a single job. 
+                We will meet you at the strata and do a walk around to discuss what we can offer and when we can offer it. 
+                We are confident that you will be completely satisfied with our services and that you will get the full experience.
+                 If you have any further questions feel free to sent them threw the "Inquiry" form.
+            </p>
+            <form action="WMstrata.html">
+                <input type="submit" value="More info">
+            </form>
+        </div>
+        </div>
+          <h2>Why Choose Us</h2>
+        <div class="whychooseus">
+        <article class="knowhow">
+            <h3>We know our stuff</h3><!--Information regarding experience-->
+            <p>We have been in the exterior cleaning business for X years. We have taken tons of advise from 
+                peers and have offer the safest and most lasting solution we can. Year after year we are always 
+                improving upon our tactics and adjusting how we do things to make sure we are leaving you with 
+                the best experience possible.
+            </p>
+        </article>
+        <article class="harm">
+            <h3>Don't Harm Your Property</h3><!--Information on products used and why cleaning is important-->
+            <p>One of the things we pride ourselves on the most is our process and part of this process is the 
+                products we use. We use a biodegradable pre-wash that is completely safe and will not damage your 
+                siding, grass, soil, pets, or anything else you may have outside. We also use extender poles with a 
+                micro-fiber brush that will not scratch or damage any of your siding and will instead get into 
+                all of the groves and give it a full clean.
+            </p>
+        </article>
+        <article class="friendly">
+            <h3>Friendly & Dedicated</h3><!--Highlight the social ability of the crew-->
+            <p>We pride ourselves on offering a full, great experience. This starts with introduction 
+                we are super friendly and easy to get along with. We also are extremely dedicated to our 
+                work so if you ever have concernes or questions we will happily answer them.
+            </p>
+        </article>
+        <article class="localbusiness">
+            <h3>Local Business</h3><!--Utilize the fact it is a small local business-->
+            <p>Ontop of everything else we have to offer we are a local business. By employing us you are 
+                employing people from your community. Based out of Nanaimo we have so far done 1000's of exterior 
+                cleaning jobs. If you like to support local, we are a local business that will work for your 
+                support.
+            </p>
+        </article>
+        </div>
+    </main>
+    <footer>
+        <nav class="wrap">
+            <a href="WMhome.html"><img src="images/Windowmasterslogo.png" alt="Window Masters Nanaimo" width="100"></a>
+            <div>
+                <ul>
+                    <li><a href="WMhome.html">Home</a></li>
+                    <li><a href="WMresidential.html">Residential</a></li>
+                    <li><a href="WMstrata.html">Strata</a></li>
+                    <li><a href="WMcomm-business.html">Commercial Business</a></li>
+                    <li><a href="WMgallery.html">Gallery</a></li>
+                </ul>
+            </div>
+            <p>This is a fictional website that was designed and coded as an educational exercise. It is not intended to be seen outside of the class environment. None of the content and images were approved by the business owner.</p>
+        </nav>
+    </footer>
+    <script src="WMscript.js"></script>
+</body>
+</html>
